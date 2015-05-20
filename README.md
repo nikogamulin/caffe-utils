@@ -6,7 +6,7 @@ The repository contains some utilities I have created to simplify procedures usi
 
 ##Content
 ###hdf5
-The folder contains the procedure to generate hdf5 dataset from the list of images with multiple labels. The simple example of creating the dataset can be tested by running *demo.m* file.
+The folder contains the procedure to generate hdf5 dataset from the list of images with multiple labels. The simple example of creating the dataset can be tested by running [demo.m](https://github.com/nikogamulin/caffe-utils/blob/master/hdf5/demo.m) file.
 
 References: [dineshj1](https://github.com/dineshj1/caffe/tree/c795095fd26767152e3ee6a3183cda5edd75c39b/matlab/caffe/hdf5creation)
 
