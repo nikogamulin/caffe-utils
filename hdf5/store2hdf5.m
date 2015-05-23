@@ -28,7 +28,7 @@ function [curr_dat_sz, curr_lab_sz] = store2hdf5(filename, data, labels, create,
       fprintf('Warning: replacing existing file %s \n', filename);
       delete(filename);
     end      
-    h5create(filename, '/data', [dat_dims(1:end-1) maxSize], 'Datatype', 'single', 'ChunkSize', [dat_dims(1:end-1) chunksz], 'Deflate',9); % width, height, channels, number 
+    h5create(filename, '/data', [dat_dims(1:end-1) maxSize], 'Datatype', 'single', 'ChunkSize', [dat_dims(1:end-1) chunksz]); % width, height, channels, number 
     h5create(filename, '/label', [lab_dims(1:end-1) maxSize], 'Datatype', 'single', 'ChunkSize', [lab_dims(1:end-1) chunksz]); % width, height, channels, number 
     if ~exist('startloc','var') 
       startloc.dat=[ones(1,length(dat_dims)-1), 1];
